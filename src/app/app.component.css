@@ -1,0 +1,15 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  flex-grow: 1;
+}
+
+.content {
+  flex-grow: 3;
+}
+.sidebar {
+  flex-grow: 1;
+}
