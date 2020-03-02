@@ -1,10 +1,7 @@
 :host {
   min-width: 240px;
   max-width: 240px;
-  height: 100vh;
   background-color: #352E2B;
-    /* background-color: #4B5F65; */
-
   color: #fff;
 }
 
@@ -21,10 +18,10 @@ a {
 }
 
 .navbar {
+  margin-top: 30vh;
   display: flex;
-  height: 100%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 

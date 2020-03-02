@@ -1,1 +1,19 @@
-<p>projects works!</p>
+<div class="container-custom">
+    <div class="container" id="selector">
+        <h3 [style.text-decoration]="showLocal ? 'underline' : 'none'"
+            [style.color]="showLocal ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0.5)'" (click)="showLocal=true">Local
+            Projects</h3>
+        <h3 [style.text-decoration]="showLocal ? 'none' : 'underline'"
+            [style.color]="showLocal ? 'rgba(0, 0, 0, 0.5)': 'rgba(0, 0, 0, 1)'" (click)="showLocal=false">Global
+            Projects</h3>
+    </div>
+    <div class="container">
+        <div *ngIf="showLocal; then localBlock else globalBlock" class="container"></div>
+        <ng-template #localBlock>
+            <app-local-projects></app-local-projects>
+        </ng-template>
+        <ng-template #globalBlock>
+            <app-global-projects></app-global-projects>
+        </ng-template>
+    </div>
+</div>

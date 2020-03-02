@@ -13,6 +13,8 @@ import { TeamComponent } from "./team/team.component";
 import { ContactComponent } from "./contact/contact.component";
 import { InvolvementComponent } from "./involvement/involvement.component";
 import { DonateComponent } from "./donate/donate.component";
+import { LocalProjectsComponent } from './local-projects/local-projects.component';
+import { GlobalProjectsComponent } from './global-projects/global-projects.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { DonateComponent } from "./donate/donate.component";
     TeamComponent,
     ContactComponent,
     InvolvementComponent,
-    DonateComponent
+    DonateComponent,
+    LocalProjectsComponent,
+    GlobalProjectsComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

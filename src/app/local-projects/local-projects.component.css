@@ -1,0 +1,13 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    
+}
+
+.card {
+    background-color: #E3E6E1;
+    border: none;
+    padding-bottom: 2em;
+}
